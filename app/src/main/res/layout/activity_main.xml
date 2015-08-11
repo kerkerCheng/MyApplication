@@ -17,8 +17,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button"
         android:id="@+id/button"
-        android:shadowColor="@color/abc_background_cache_hint_selector_material_dark"
-        style="@style/AlertDialog.AppCompat.Light" />
+        android:onClick="sendMessage"/>
 </LinearLayout>
 
 
