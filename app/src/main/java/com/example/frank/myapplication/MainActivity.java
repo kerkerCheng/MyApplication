@@ -1,6 +1,10 @@
 package com.example.frank.myapplication;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +15,7 @@ import android.view.View;
 import android.widget.EditText;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     public static final String EXTRA_MESSAGE = "message_send_correct";
     @Override
@@ -22,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main , menu);
+        inflater.inflate(R.menu.menu_main, menu);
         return  super.onCreateOptionsMenu(menu);
 
     }
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
-            case R.id.action_search:
+            case R.id.action_finish:
                 finish();
                 return true;
             case R.id.action_settings:
